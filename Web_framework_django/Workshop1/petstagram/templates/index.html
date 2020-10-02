@@ -1,0 +1,33 @@
+{% extends "shared/site.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+{% endblock %}
+
+{% block site_title %}
+    Welcome to Petstagram
+{% endblock %}
+
+{% block site_content %}
+    <section class="banner">
+        <header>
+            <h1 class="title1">Welcome to Petstagram</h1>
+            <h2 class="title2">Share your pets photos.</h2>
+        </header>
+        <div class="row">
+            <div class="col">
+                Already have an account?
+                <button class="button">
+                    Sing in
+                </button>
+            </div>
+            <div class="col">
+                Do not have an account?
+                <button class="button">
+                    Sing up
+                </button>
+            </div>
+        </div>
+    </section>
+{% endblock %}
