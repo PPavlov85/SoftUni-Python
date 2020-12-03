@@ -1,0 +1,20 @@
+{% load static %}
+{% static 'images' as base_url %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Motorbikes</title>
+</head>
+<body>
+{% for bike in bikes %}
+    <h1>{{ bike.title }}</h1>
+    <img src="{{base_url}}/{{bike.image}}" alt="#">
+    <p>{{ bike.description }}</p>
+    <h2>{{ bike.price }}</h2>
+{% endfor %}
+</body>
+</html>
+
