@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'Exam_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'motorbike_shop',
+        'NAME': 'online_shop',
         'USER': 'postgres',
         'PASSWORD': '12345678',
         'HOST': '127.0.0.1',
@@ -131,3 +131,11 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = join(BASE_DIR, 'media')
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'pavlov85pavel@gmail.com'
+EMAIL_HOST_PASSWORD = 'gxlizletaiogppny'

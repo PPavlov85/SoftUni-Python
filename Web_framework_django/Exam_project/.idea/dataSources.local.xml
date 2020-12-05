@@ -12,7 +12,7 @@
         <introspection-scope>
           <node kind="database">
             <name qname="@" />
-            <name qname="motorbike_shop" />
+            <name qname="online_shop" />
             <node kind="schema" qname="@" />
           </node>
         </introspection-scope>
