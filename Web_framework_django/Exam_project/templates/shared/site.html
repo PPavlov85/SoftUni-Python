@@ -1,0 +1,41 @@
+{% load static %}
+{% static 'images' as base_url %}
+
+<!DOCTYPE html>
+<html>
+<title>Motorbikes online shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'JS/scripts.js' %}">
+
+<body class="w3-content" style="max-width:1200px">
+
+{% include "shared/nav.html" %}
+
+<div class="w3-main" style="margin-left:250px">
+
+    <header class="w3-container w3-xlarge w3-black w3-padding-32">
+        <h1 class="w3-left">THE BEST MOTORCYCLE ONLINE SHOP</h1>
+        <div class="w3-right">
+            <a href="" class="fa fa-user w3-hover-opacity" title="login"></a>
+            <a href="" class="fa fa-shopping-cart w3-hover-opacity" title="pay now"></a>
+            <a href="" class="fa fa-search w3-hover-opacity" title="search"></a>
+        </div>
+    </header>
+
+    {% block site_content %}
+    {% endblock %}
+
+    {% include "shared/footer.html" %}
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                                                                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </div>
+</div>
+</body>
+</html>

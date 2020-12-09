@@ -13,10 +13,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -35,14 +35,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\static\images" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates\email" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\static\images" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\static\css" />
@@ -84,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607004064199</updated>
       <workItem from="1607004155288" duration="17508000" />
-      <workItem from="1607076151352" duration="39422000" />
+      <workItem from="1607076151352" duration="77760000" />
     </task>
     <servers />
   </component>
@@ -96,22 +98,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1607006696544" />
-    <state width="1322" height="144" key="GridCell.Tab.0.bottom" timestamp="1607167333658">
+    <state width="1322" height="172" key="GridCell.Tab.0.bottom" timestamp="1607519347189">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="144" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1607167333658" />
-    <state width="1322" height="144" key="GridCell.Tab.0.center" timestamp="1607167333658">
+    <state width="1322" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1607519347189" />
+    <state width="1322" height="172" key="GridCell.Tab.0.center" timestamp="1607519347189">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="144" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1607167333658" />
-    <state width="1322" height="144" key="GridCell.Tab.0.left" timestamp="1607167333658">
+    <state width="1322" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1607519347188" />
+    <state width="1322" height="172" key="GridCell.Tab.0.left" timestamp="1607519347188">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="144" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1607167333658" />
-    <state width="1322" height="144" key="GridCell.Tab.0.right" timestamp="1607167333658">
+    <state width="1322" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1607519347188" />
+    <state width="1322" height="172" key="GridCell.Tab.0.right" timestamp="1607519347189">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="144" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1607167333658" />
+    <state width="1322" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1607519347189" />
     <state width="212" height="471" key="HiddenNamespacesPopup" timestamp="1607081994862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

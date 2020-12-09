@@ -812,7 +812,7 @@ sequence|table|33487|33489|1
     <database id="5" parent="1" name="online_shop">
       <ObjectId>33545</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1054</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1122</IntrospectionStateNumber>
       <Relations>sequence|table|33546|33548|1
 sequence|table|33557|33559|1
 sequence|table|33567|33569|1
@@ -888,7 +888,7 @@ sequence|table|33704|33706|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1055</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1123</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="21" parent="5" name="heap">

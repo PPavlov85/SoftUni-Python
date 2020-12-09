@@ -1,103 +1,27 @@
-{% load static %}
-{% static 'images' as base_url %}
-
-<!DOCTYPE html>
-<html>
-<title>Motorbikes online shop</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{% static 'css/index.css' %}">
-<link rel="stylesheet" href="{% static 'JS/scripts.js' %}">
-
-<body class="w3-content" style="max-width:1200px">
-
-<!-- Sidebar/menu -->
-{% include "shared/nav.html" %}
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">SHOP</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge w3-black w3-padding-32">
-    <h1 class="w3-left">THE BEST MOTORCYCLE ONLINE SHOP</h1>
-    <div class="w3-right">
-        <a href="" class="fa fa-user w3-hover-opacity" title="login"></a>
-        <a href="" class="fa fa-shopping-cart w3-hover-opacity" title="pay now"></a>
-        <a href="" class="fa fa-search w3-hover-opacity" title="search"></a>
+{% extends "shared/site.html" %}
+{% block site_content %}
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+        <img src="/static/images/header_image.jpg" alt="#" style="width:110%">
+        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+            <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+            <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+            <h1 class="w3-hide-small">COLLECTION 2021</h1>
+            <p><a href="#" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+        </div>
     </div>
-  </header>
-
-  <!-- Image header -->
-  <div class="w3-display-container w3-container">
-    <img src="/static/images/Kawasaki_Ninja_H2R_Seattle_motorcycle_show.jpg" alt="#" style="width:110%">
-    <div class="w3-display-topright w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-      <h1 class="w3-hide-small">COLLECTION 2021</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
-    </div>
-  </div>
-
-  <div class="w3-container w3-text-black" id="jeans">
-    <p>8 items</p>
-  </div>
-
-  <!-- Product grid -->
+    <!-- Product grid -->
     <div class="w3-row-padding">
         {% for bike in bikes %}
-        <div class="w3-quarter">
-            <p>{{ bike.brand }}<br>{{ bike.model }}</p>
+            <div class="w3-quarter">
+                <h4>{{ bike.brand }}<br>{{ bike.model }}</h4>
                 <div class="w3-auto">
-                    <img src="{{ base_url }}/{{ bike.image }}" alt="#" style="max-width: 220px; max-height: 130px; width:auto; ">
+                    <a href="{% url "bike details" bike.id %}"><img src="{{ bike.image.url }}" alt="#"
+                    style="max-width: 220px; max-height: 130px; width:auto"></a>
                 </div>
-            <p>{{ bike.description }}<br><b>${{ bike.price }}</b></p>
-        </div>
+                <h3>${{ bike.price }}</h3>
+            </div>
         {% endfor %}
+        <p><a href="{% url "bike add" %}" class="w3-button w3-blue w3-padding-large w3-large">ADD BIKE</a></p>
     </div>
-
-  <!-- Subscribe section -->
-  <div class="w3-container w3-black w3-padding-32">
-    <h1>Subscribe</h1>
-    <p>To get special offers and VIP treatment:</p>
-    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-  </div>
-
-  <!-- Footer -->
-  {% include "shared/footer.html" %}
-
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-  <!-- End page content -->
-</div>
-
-<!-- Newsletter Modal -->
-<div id="newsletter" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-    <div class="w3-container w3-white w3-center">
-      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-      <h2 class="w3-wide">NEWSLETTER</h2>
-      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
-    </div>
-  </div>
-</div>
-</body>
-</html>
+{% endblock %}
