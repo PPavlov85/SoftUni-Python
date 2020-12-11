@@ -5,6 +5,14 @@
       <a href="{% url "home page" %}"><h3 class="w3-wide w3-hover-opacity" title="back to home page"><b>MOTORBIKES ONLINE SHOP</b></h3></a>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        {% if user.is_authenticated %}
+            <p><a href="{% url "profile" %}" class="w3-bar-item w3-button">Hello, {{ user.username }}</a></p>
+            <a href="{% url "logout user" %}" class="w3-bar-item w3-button">Logout</a>
+        {% else %}
+            <a href="{% url "login user" %}" class="w3-bar-item w3-button">Login</a>
+            <a href="{% url "register user" %}" class="w3-bar-item w3-button">Register</a>
+        {% endif %}
+        <br><br>
         <a href="#" class="w3-bar-item w3-button">HONDA</a>
         <a href="#" class="w3-bar-item w3-button">YAMAHA</a>
         <a href="#" class="w3-bar-item w3-button">KAWASAKI</a>

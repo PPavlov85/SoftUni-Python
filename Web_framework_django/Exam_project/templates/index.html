@@ -7,7 +7,9 @@
             <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
             <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
             <h1 class="w3-hide-small">COLLECTION 2021</h1>
-            <p><a href="#" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+            {% if user.is_authenticated %}
+                <p><a href="#" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
+            {% endif %}
         </div>
     </div>
     <!-- Product grid -->
@@ -22,6 +24,8 @@
                 <h3>${{ bike.price }}</h3>
             </div>
         {% endfor %}
+    {% if request.user.is_staff %}
         <p><a href="{% url "bike add" %}" class="w3-button w3-blue w3-padding-large w3-large">ADD BIKE</a></p>
+    {% endif %}
     </div>
 {% endblock %}

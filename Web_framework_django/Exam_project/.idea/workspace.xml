@@ -15,8 +15,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,11 +44,11 @@
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\Exam_project\accounts" />
+      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\Exam_project" />
+      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates\bikes" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates\email" />
       <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates" />
-      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\static\images" />
-      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\static\css" />
-      <recent name="C:\Users\Intel\Documents\GitHub\SoftUni\Web_framework_django\Exam_project\templates\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607004064199</updated>
       <workItem from="1607004155288" duration="17508000" />
-      <workItem from="1607076151352" duration="77760000" />
+      <workItem from="1607076151352" duration="164598000" />
     </task>
     <servers />
   </component>
@@ -98,34 +98,34 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1607006696544" />
-    <state width="1322" height="172" key="GridCell.Tab.0.bottom" timestamp="1607519347189">
+    <state width="1322" height="172" key="GridCell.Tab.0.bottom" timestamp="1607702999970">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1607519347189" />
-    <state width="1322" height="172" key="GridCell.Tab.0.center" timestamp="1607519347189">
+    <state width="1322" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1607702999970" />
+    <state width="1322" height="172" key="GridCell.Tab.0.center" timestamp="1607702999970">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1607519347188" />
-    <state width="1322" height="172" key="GridCell.Tab.0.left" timestamp="1607519347188">
+    <state width="1322" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1607702999970" />
+    <state width="1322" height="172" key="GridCell.Tab.0.left" timestamp="1607702999970">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1607519347188" />
-    <state width="1322" height="172" key="GridCell.Tab.0.right" timestamp="1607519347189">
+    <state width="1322" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1607702999970" />
+    <state width="1322" height="172" key="GridCell.Tab.0.right" timestamp="1607702999970">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1322" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1607519347189" />
-    <state width="212" height="471" key="HiddenNamespacesPopup" timestamp="1607081994862">
+    <state width="1322" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1607702999970" />
+    <state width="212" height="471" key="HiddenNamespacesPopup" timestamp="1607688843266">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="212" height="471" key="HiddenNamespacesPopup/0.0.1366.768@0.0.1366.768" timestamp="1607081994862" />
-    <state x="581" y="243" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1607081948847">
+    <state width="212" height="471" key="HiddenNamespacesPopup/0.0.1366.768@0.0.1366.768" timestamp="1607688843266" />
+    <state x="581" y="243" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1607688680293">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="581" y="243" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.768@0.0.1366.768" timestamp="1607081948846" />
-    <state x="517" y="270" width="332" height="271" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607080557622">
+    <state x="581" y="243" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1366.768@0.0.1366.768" timestamp="1607688680293" />
+    <state x="517" y="270" width="332" height="271" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1607687507414">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="270" width="332" height="271" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.768@0.0.1366.768" timestamp="1607080557622" />
+    <state x="517" y="270" width="332" height="271" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.768@0.0.1366.768" timestamp="1607687507414" />
     <state x="677" y="45" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607080316953">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
