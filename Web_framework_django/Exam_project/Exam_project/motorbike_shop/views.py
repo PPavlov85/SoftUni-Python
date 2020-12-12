@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, UpdateView, CreateView, DeleteView
@@ -26,21 +27,23 @@ class BikeDetailsView(DetailView):
     context_object_name = "bike"
 
 
-class BikeUpdateView(UpdateView):
+class BikeUpdateView(LoginRequiredMixin, UpdateView):
     model = Bikes
     template_name = "bikes/update_bike.html"
     fields = "__all__"
     success_url = reverse_lazy("home page")
 
 
-class BikeAddView(CreateView):
+class BikeAddView(LoginRequiredMixin, CreateView):
+
     model = Bikes
     template_name = "bikes/add_bike.html"
     fields = "__all__"
     success_url = reverse_lazy("home page")
 
 
-class BikeDeleteView(DeleteView):
+class BikeDeleteView(LoginRequiredMixin, DeleteView):
+
     model = Bikes
     fields = "__all__"
     template_name = "bikes/delete_bike.html"

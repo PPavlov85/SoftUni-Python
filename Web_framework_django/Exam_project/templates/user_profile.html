@@ -1,12 +1,13 @@
 {% extends 'shared/site.html' %}
 {% block site_content %}
     <div class="container">
-        <h1>Hello</h1>
+        <h1>Hello, {{ user.username }}</h1>
         <form class="w-50 m-auto" method="post" style=" margin: 10%; padding: 5% 5%">
-            {{ u_form }}
-            {{ p_form }}
+            {{ user_form }}
+            {{ profile_form }}
             {% csrf_token %}
-{#            <button type="submit" class="btn btn-primary">Edit</button>#}
+            <button type="submit" class="btn btn-primary">Edit</button>
+            <a href="{% url 'change_password' %}">Change password</a>
         </form>
     </div>
 {% endblock %}

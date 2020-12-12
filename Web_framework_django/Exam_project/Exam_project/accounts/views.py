@@ -1,20 +1,29 @@
-from django.contrib.auth.models import User
 from django.contrib.auth.views import LoginView
 from django.shortcuts import redirect, render
-from django.views.generic import UpdateView
-from django.urls import reverse_lazy
-from django.views.generic.base import View
-
-from Exam_project.accounts.forms import UserProfileForm, RegisterUserForm
-from Exam_project.accounts.models import Profile
+from Exam_project.accounts.forms import RegisterUserForm, UserUpdateForm, ProfileUpdateForm
 
 
 def profile(request):
+    if request.method == "POST":
+        user_form = UserUpdateForm(request.POST, instance=request.user)
+        profile_form = ProfileUpdateForm(request.POST, instance=request.user.profile)
+
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+
+            return redirect('profile')
+
+    else:
+        user_form = UserUpdateForm(instance=request.user)
+        profile_form = ProfileUpdateForm(instance=request.user.profile)
+
     context = {
-        "u_form": RegisterUserForm(instance=request.user),
-        "p_form": UserProfileForm(instance=request.user.profile),
+        'user_form': user_form,
+        'profile_form': profile_form,
     }
-    return render(request, "user_profile.html", context)
+
+    return render(request, 'user_profile.html', context)
 
 
 def register(request):
